@@ -531,9 +531,7 @@ var time = 0;
             
             requestAnimationFrame(render); //再度render関数を実行
             renderer.render(scene, camera); //シーン, カメラをもとに描画
-            //console.log("あ"+gacha_wo_hiku+" "+time);
             if(gacha_wo_hiku){
-              //console.log("456行目");
               if(time == 0){
                 kakudaiCamera();
                 
@@ -543,7 +541,6 @@ var time = 0;
               if(time <= 180 && time%10 == 0) {
                 //console.log("レバーの回転");
                 lever.rotation.x -= Math.PI/9;
-                //console.log("い");
               }
               if(time == 250){
                 var random_kami = Math.floor( Math.random() * kaminoku.length );
@@ -597,7 +594,6 @@ var time = 0;
 
     }
     render();
-    //console.log("う");
     button_hiku.style.display='block';
   }
 </script>
